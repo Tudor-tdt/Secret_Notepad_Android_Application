@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotesActivity">
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_label"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textThisAreYourNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thisareyournotes_label"
+        android:textSize="18sp"
+        android:layout_marginTop="48dp"
+        android:layout_centerHorizontal="false"/>
+
+    <EditText
+        android:id="@+id/editTextNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWelcome"
+        android:layout_marginTop="32dp"
+        android:gravity="start|top"
+        android:hint="Enter your note here"
+        android:inputType="textMultiLine"
+        android:minLines="18"
+        android:maxLines="18"
+        tools:ignore="TextContrastCheck"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/buttonSaveNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/savenote_label"
+        android:layout_below="@id/editTextNote"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout_label"
+        android:layout_below="@id/buttonSaveNote"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

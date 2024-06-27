@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/username_label"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="username"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUsername"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/password_label"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPassword"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login_label"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/register_label"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
